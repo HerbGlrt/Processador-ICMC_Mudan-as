@@ -21,31 +21,31 @@ This project consists of five parts:
 
 5-	Documentation (Processor architecture and Assembly language description)
 
-#Adição da Funcionalidade "Ir para a Declaração"
-
-Olá!
-
+# Adição da Funcionalidade "Ir para a Declaração"
 Se você chegou até aqui, é porque está interessado em contribuir para aprimorar nosso simulador. Recentemente, tive a ideia de adicionar a funcionalidade "Ir para a Declaração" ao simulador, inspirado pela praticidade encontrada em outras IDEs populares como Replit ou VSCode.
+
+# Exemplo da ideia retirada do compilador Replit
+![Vídeo sem título ‐ Feito com o Clipchamp](https://github.com/HerbGlrt/Processador-ICMC_Mudan-as/assets/62862399/ef8a2757-ae04-4431-b9c8-dd35777dba20)
 
 # Como Adicionar "Ir para a Declaração"
 
-Se você deseja implementar essa função no simulador existente, aqui estão algumas diretrizes gerais:
+Para implementar essa função no simulador existente, aqui estão algumas diretrizes gerais:
 
 1. **Análise Estática Simples:**
    - Comece desenvolvendo um analisador estático que possa identificar declarações e suas posições no código assembly. Pode ser útil examinar padrões de nomenclatura, como rótulos e diretivas.
 
 2. **Banco de Dados de Símbolos:**
-   - Crie um banco de dados de símbolos que faça o mapeamento dos nomes dos rótulos para suas posições no código. Isso pode ser feito usando uma estrutura simples, como um dicionário.
+   - Crie um banco de dados de símbolos que faça o mapeamento dos nomes dos rótulos para suas posições no código, como por exemplo o char ':' que é necessário após o início de uma nova função. Isso pode ser feito usando uma estrutura simples, como um dicionário.
 
 3. **Atalhos de Teclado:**
-   - Implemente atalhos de teclado que, quando acionados, usem a posição do cursor para pesquisar no banco de dados de símbolos e navegar até a declaração correspondente.
+   - Implemente atalhos de teclado que, quando acionados, usem a posição do cursor para pesquisar no banco de dados de símbolos e navegar até a declaração correspondente. No caso do Replit ou VSCode, a tecla utilizada é o Ctrl.
 
 4. **Realce da Declaração (Opcional):**
    - Considere adicionar um destaque visual à declaração correspondente quando o usuário estiver sobre um nome de símbolo e acionar o atalho de teclado.
 
 # Inspiração Pessoal
 
-Essa ideia surgiu durante meu uso do simulador, onde senti a falta dessa funcionalidade e percebi que adicioná-la poderia tornar a experiência de programação mais fluida e eficiente.
+Essa ideia surgiu durante meu uso do simulador para recriar o jogo "Fireboy and Watergirl", onde senti a falta dessa funcionalidade e percebi que adicioná-la poderia tornar a experiência de programação mais fluida e eficiente.
 
 # Configuração da Placa DE0:
 
